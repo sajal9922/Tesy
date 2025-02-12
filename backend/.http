@@ -1,0 +1,130 @@
+# POST http://localhost:5001/login
+# Content-Type: application/json
+
+# {
+#   "username": "admin",
+#   "password": "admin"
+# }
+
+
+# POST http://localhost:5001/addanimal
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiYWRtaW4iLCJ2b2x1bnRlZXIiXSwiaWF0IjoxNzE2NTQ2MzMxLCJleHAiOjE3MTY1NDk5MzF9.MeqCeoEeIGHJI424oQ0yn7lQx4sUlwhvg5edNPa5174
+
+# {
+#     "animalName": "Lion",
+#      "animalType": "Mammal",
+#      "animalDescription": "A large, carnivorous feline."
+# }
+
+# Get all animals
+# GET http://localhost:5001/get/animals
+
+
+# POST http://localhost:5001/addanimal
+# Content-Type: application/json
+# # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiYWRtaW4iLCJ2b2x1bnRlZXIiXSwiaWF0IjoxNzE2NTM5OTQ5LCJleHAiOjE3MTY1NDM1NDl9.8t1VDXKiLy94hpuqo598inz9OrGO5RonsxeWLzrjj1w
+
+# {
+#     "species_name": "Deer",
+#     "in_date": "2024-05-13",
+#     "in_tesy_date": "2024-05-13",
+#     "out_date": null,
+#     "population": 1,
+#     "reason": "Stray",
+#     "animal_name": "Buddy",
+#     "microchip_no": "123456789",
+#     "animal_age": "5",
+#     "color": "Brown",
+#     "breed": "Labrador Retriever",
+#     "reason_euthanized": null,
+#     "sex": "male",
+#     "shelter_no": "Shelter A",
+#     "notes": "Friendly and energetic dog",
+#     "animal_location": "Unknown",
+#     "create_date": "2024-05-13",
+#     "created_by": 1,
+#     "edited_date": "2024-05-13",
+#     "edited_by": 1,
+#     "age_class": "adult"
+# }
+
+#get animal by id
+POST http://localhost:5001/get/animal/127
+
+# # update animal
+
+# PUT http://localhost:5001/update/animal/107
+# Content-Type: application/json
+
+# {
+#     "species_name": "cow",
+#     "in_date": "2022-01-01",
+#     "in_tesy_date": "2022-01-02",
+#     "out_date": "2022-01-03",
+#     "population": "Updated population",
+#     "reason": "Updated reason",
+#     "animal_name": "new name",
+#     "microchip_no": "1234567890",
+#     "animal_age": "3 years",
+#     "color": "Brown",
+#     "breed": "Updated breed",
+#     "reason_euthanized": "Updated reason euthanized",
+#     "sex": "female",
+#     "shelter_no": "Updated shelter_no",
+#     "notes": "Updated notes",
+#     "animal_location": "Updated from",
+#     "create_date": "2022-01-04",
+#     "created_by": 1,
+#     "edited_date": "2022-01-05",
+#     "edited_by": 2,
+#     "age_class": "adult",
+#     "tesy_id": "Updated Tesy1",
+#     "sey_stat": "Updated Stat1",
+#     "observation": "Updated observation",
+#     "treatment": "Updated treatment"
+# }
+
+# # update animal
+
+# PUT http://localhost:5001/update/animal/124
+# Content-Type: application/json
+
+# {
+#   "species_name": "cow",
+#   "in_date": "2024-01-01",
+#   "in_tesy_date": "2024-01-02",
+#   "out_date": null,
+#   "population": 10,
+#   "reason": "Research",
+#   "animal_name": "Lamda",
+#   "microchip_no": "123456789",
+#   "animal_age": 5,
+#   "color": "Golden",
+#   "breed": "African Lion",
+#   "reason_euthanized": "N/A",
+#   "sex": "female",
+#   "shelter_no": "S123",
+#   "notes": "Healthy",
+#   "animal_location": "Safari Zone",
+#   "age_class": "dam",
+#   "tesy_id": "T1234",
+#   "sey_stat": "Active",
+#   "observations": [
+#     {
+#       "type_id": 12,
+#       "people_id": 2,
+#       "date": "2024-01-22",
+#       "value": "Observation value 22"
+#     }
+#   ],
+#   "treatments": [
+#     {
+#       "treatment_type_id": 13,
+#       "people_id": 2,
+#       "date": "2024-01-22",
+#       "description": "Treatment description-22",
+#       "dosage": null
+#     }
+#   ]
+# }

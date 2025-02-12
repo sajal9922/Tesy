@@ -1,0 +1,17 @@
+[
+    {
+        "username": "volunteer",
+        "roles": {
+            "User": 2
+        },
+        "password": "$2b$10$uCb3Kcdv04DYuwN18lCCc.KFdUr70regyrYM5aXThYhFRH0S/29Nq"
+    },
+    {
+        "username": "admin",
+        "roles": {
+            "User": 1
+        },
+        "password": "$2b$10$iuyT4KJj8qOyIg57v71O6.EmZqiXL4GLeCJmDRxKcUi1CCuq8jLrC",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzEzNjE1MzAzLCJleHAiOjE3MTM3MDE3MDN9.JdacCq50wTpSdVz27-45CNYbgcpbtch3IMvA9-OvGGk"
+    }
+]
